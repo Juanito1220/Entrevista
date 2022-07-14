@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head') %>
+        
+        <link rel="stylesheet" href="/stylesheets/userDetail.css">
+
+        <title>Usuario</title>
+</head>
+
+<body>
+
+        <main class="container-main">
+        </main>
+        <nav class="main-navbar">
+           
+                <a href="/users" class="button_return">Volver a Usuarios</a>
+                    
+        </nav>
+        <div class="container-detalle">
+            <div class="imagen">
+                <img class="imagenes" src="/images/Users/<%= users.image  %>" alt=""></img>
+                <form action="/users/delete/<%= users.user_id %>?_method=DELETE" method="POST">
+                    <input class="button_edit" onclick="location.href='/users/edit/<%= users.user_id %>'" type="button"
+                        value="Actualizar">
+                    <button type="submit" class="button_delete">Eliminar</button>
+                </form>
+            </div>
+            <div class="detalle">
+                <p class="id">N° Usuario:<%= users.user_id %>
+                </p>
+                <br>
+                <p class="nombre">Nombre:<%= users.name %>
+                </p>
+                <br>
+
+                <p class="nombre">Teléfono:<%= users.phone %>
+                </p>
+                <br>
+                <p class="nombre">Fecha de nacimiento:<%= users.date %>
+                </p>
+                <br>
+                <p class="nombre">Dirección:<%= users.direction %>
+                </p>
+                <br>
+                <p class="email">Correo Electronico: <%= users.email %></p>
+                
+                <br>
+                <br>
+
+              
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+</body>
+
+</html>

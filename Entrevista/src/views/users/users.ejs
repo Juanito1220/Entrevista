@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <%- include('../partials/head') %>
+  
+    <link rel="stylesheet" href="/stylesheets/users.css">
+
+    <title>Lista de contactos</title>
+</head>
+
+<body>
+
+    <main class="container-main">
+
+
+
+    <input class="button_create" type="button" onclick="location.href='/users/register'" value="Crear nuevo usuario">
+
+
+    </main>
+    
+
+    <h1 class="titulo">MIS CONTACTOS GUARDADOS</h1>
+    <br>
+    <br>
+    
+    <div class="contenedor_principal">
+
+
+      <section class="menu">
+        <% allUsers.forEach(function(allUsers) { %>
+          <a href="/users/detail/<%= allUsers.user_id %>">
+
+            <article>
+              <div class="imgen-contenedor">
+                <img src="/images/Users/<%= allUsers.image %>" alt="">
+              </div>
+              <ul>
+                <li>
+                  Nombre: <%= allUsers.name %>
+                </li>
+          
+                <li>
+                  Teléfono: <%= allUsers.phone %>
+                </li>
+                <li>
+                  Fecha de nacimiento: <%= allUsers.date %>
+                </li>
+                <li>
+                  Dirección: <%= allUsers.direction %>
+                </li>
+                <li>
+                Correo electronico: <%= allUsers.email %>
+                </li>
+
+              </ul>
+            </article>
+          </a>
+          <% }) %>
+
+      </section>
+    </div>
+
+  </body>
+  
+  </html>

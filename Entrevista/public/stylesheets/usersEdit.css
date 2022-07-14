@@ -1,0 +1,101 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Delius Unicase';
+    background-color: #ffffff;
+}
+
+
+
+.forms {
+    width: 450px;
+    height: 870px;
+    background-color: #2A2D43;
+    margin: auto;
+    margin-bottom: 60px;
+    border-radius: 20px;
+
+}
+
+.userLogin {
+    color: brown;
+    font-weight: bold;
+}
+
+
+.ingreso {
+    display: flex;
+    background-color: #9198A9;
+    width: 870px;
+    height: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+
+input {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+label {
+    font-family: 'Delius Unicase', cursive;
+    color: #C5C3C3;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: #C5C3C3;
+    font-family: 'Delius Unicase', cursive;
+    font-size: small;
+}
+
+.boton {
+    font-family: 'Delius Unicase', cursive;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: small;
+    height: 40px;
+}
+
+.formulario {
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.text {
+    border: none;
+    background-color: #C5C3C3;
+    border-bottom: 1px solid gray;
+}
+
+h2 {
+    color: #C5C3C3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.button_return {
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: #2A2D43;
+}
+
+.button_return:hover {
+    background-color: cornflowerblue;
+}

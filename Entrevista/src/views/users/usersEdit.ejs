@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/stylesheets/usersEdit.css">
+
+        <title>Formulario registro</title>
+</head>
+
+<body>
+
+        <main class="container-main">
+            <a href="/users/detail/<%=User.user_id %>" class="button_return">Volver al detalle</a>
+
+        </main>
+
+
+        <form class="forms" action="/users/edit/<%= User.user_id %>?_method=PATCH" method="POST"
+            enctype="multipart/form-data">
+
+            <div class="formulario">
+
+                <h2>Actualiza los datos</h2>
+                <label for="name">Nombre</label>
+                <input id="name"  type="text" name="name" value=<%=User.name %> required>
+
+                <label for="phone">Teléfono</label>
+                <input id="phone" type="text" name="phone" value=<%=User.phone %> required>
+
+                <label for="date">Fecha de nacimiento</label>
+                <input id="date" type="date" name="date" value=<%=User.date %> required>
+
+                <label for="direction">Dirección</label>
+                <input id="direction" type="direction" name="direction" value=<%=User.direction%> required>
+
+                <label for="email">Correo electronico</label>
+                <input id="email"  type="email" name="email" value=<%=User.email %> required>
+
+                <label for="imagenUsuario">Imagen de perfil</label>
+                <input type="file" name="imagenUsuario" id="imagenUsuario">
+
+              
+                <input class="boton" type="submit" value="Actualizar">
+
+        </form>
+        </div>
+
+</body>
+
+</html>

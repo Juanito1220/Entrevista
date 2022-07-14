@@ -1,0 +1,89 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Delius Unicase';
+    background-color: #ffffff;
+}
+.button_users{
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: beige;
+}
+
+.button_users:hover{
+    
+    background-color: bisque;
+}
+
+.tittle{
+    text-align: center;
+    color: darkred;
+    }
+    
+form {
+    width: 450px;
+    height: 870px;
+    background-color: #2A2D43;
+    margin: auto;
+    margin-bottom: 60px;
+    border-radius: 20px;
+
+}
+
+
+input {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+
+}
+
+label {
+    font-family: 'Delius Unicase', cursive;
+    color: #C5C3C3;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: #C5C3C3;
+    font-family: 'Delius Unicase', cursive;
+    font-size: small;
+}
+
+.boton {
+    font-family: 'Delius Unicase', cursive;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: small;
+    height: 40px;
+}
+
+.formulario {
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.text {
+    border: none;
+    background-color: #C5C3C3;
+    border-bottom: 1px solid gray;
+}
+
+h2 {
+    color: #C5C3C3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+span {
+    color: red;
+
+}

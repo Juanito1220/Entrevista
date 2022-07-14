@@ -1,0 +1,74 @@
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Delius Unicase', cursive;
+    background-color: #ffffff;
+}
+
+
+
+.container-detalle {
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+
+.container-detalle .imagen {
+    width: 40%;
+    height: 40%;
+}
+
+.imagen{
+    text-align: center;
+}
+
+.detalle {
+    width: 40%;
+    height: 40%;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.id{
+    color: blue;
+}
+.imagenes{
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: -1px 1px 19px 15px rgba(0,0,0,0.59);
+    
+}
+
+.button_edit,.button_delete{
+    
+    font-size: 15px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button_edit:hover,.button_delete:hover{
+    background-color: darkturquoise;
+}
+
+.button_return{
+    border: 1px solid rgba(0, 0, 0, 1);
+   padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button_return:hover{
+    background-color: cornflowerblue;
+}
+

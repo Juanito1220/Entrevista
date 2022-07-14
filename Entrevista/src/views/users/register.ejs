@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/stylesheets/register.css">
+        <title>Agenda de contactos</title>
+</head>
+<a class="button_users" href="/users">Usuarios registrados</a>
+<body>
+    <h1 class="tittle">AGENDA DE CONTACTOS</h1>
+
+    <main class="container-main">
+
+    </main>
+
+    <form class="register" action="/users/register" method="POST" enctype="multipart/form-data">
+
+        <div class="formulario">
+
+            <div>
+                <h2>Registra tu contacto</h2>
+                <label for="name">Nombre Completo</label>
+                <input id="name" type="text" name="name">
+                <% if(locals.errors && locals.errors.name){ %>
+                    <span>
+                        <%= errors.name.msg %>
+                    </span>
+
+                    <% } %>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Teléfono</label>
+                <input id="phone" type="number" name="phone">
+                <% if(locals.errors && locals.errors.phone){ %>
+                    <span>
+                        <%= errors.phone.msg %>
+                    </span>
+
+                    <% } %>
+            </div>
+            <br>
+
+            <div>
+                <label for="date">Fecha de nacimiento</label>
+                <input id="date" type="date" name="date">
+                
+                <% if(locals.errors && locals.errors.date){ %>
+                    <span>
+                        <%= errors.date.msg %>
+                    </span>
+
+                    <% } %>
+            </div>
+            <br>
+            <div>
+                <label for="direction">Dirección</label>
+                <input id="direction" type="text" name="direction">
+                <% if(locals.errors && locals.errors.direction){ %>
+                    <span>
+                        <%= errors.direction.msg %>
+                    </span>
+
+                    <% } %>
+            </div>
+            <br>
+            <div>
+                <label for="email">Correo Electronico</label>
+                <input id="email" type="email" name="email">
+                <% if(locals.errors && locals.errors.email){ %>
+                    <span>
+                        <%= errors.email.msg %>
+                    </span>
+
+                    <% } %>
+            </div>
+            <br>
+
+            <label for="imagenUsuario">Imagen de usuario</label>
+            <input type="file" name="imagenUsuario" id="imagenUsuario">
+
+
+            <input class="boton" type="submit" value="Guardar Contacto">
+
+    </form>
+    </div>
+
+</body>
+
+</html>
